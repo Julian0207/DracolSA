@@ -27,10 +27,10 @@ public class Usuario {
     private String ApellidosUsuario;
 
     @Column(name = "NumeroDocumento", unique = true)
-    private int NumeroDocumento;
+    private long NumeroDocumento;
 
     @Column(name = "NumeCelular")
-    private int NumeCelular;
+    private long NumeCelular;
 
     @Column(name = "NumTelefono")
     private int NumTelefono;
@@ -89,13 +89,13 @@ public class Usuario {
 
     //costructore - getters - setters
 
-
     public Usuario() {
     }
-    public Usuario(int idUsuario, String nombresUsuario, String apellidosUsuario, int numeroDocumento, int numeCelular,
-            int numTelefono, String fechaNacimientoU, Date correoUsuario, String generoUsuario, String fotoUsuario,
-            String direccionUsuario, int edadU, String contraseña, String disponibilidad, String estadoUsuario,
-            int idTipoFK, int idRolFK, int idEstadoCivilFK, int idLugarFK) {
+
+    public Usuario(int idUsuario, String nombresUsuario, String apellidosUsuario, long numeroDocumento,
+            long numeCelular, int numTelefono, String fechaNacimientoU, Date correoUsuario, String generoUsuario,
+            String fotoUsuario, String direccionUsuario, int edadU, String contraseña, String disponibilidad,
+            String estadoUsuario, int idTipoFK, int idRolFK, int idEstadoCivilFK, int idLugarFK) {
         IdUsuario = idUsuario;
         NombresUsuario = nombresUsuario;
         ApellidosUsuario = apellidosUsuario;
@@ -116,121 +116,156 @@ public class Usuario {
         IdEstadoCivilFK = idEstadoCivilFK;
         IdLugarFK = idLugarFK;
     }
+
     public int getIdUsuario() {
         return IdUsuario;
     }
+
     public void setIdUsuario(int idUsuario) {
         IdUsuario = idUsuario;
     }
+
     public String getNombresUsuario() {
         return NombresUsuario;
     }
+
     public void setNombresUsuario(String nombresUsuario) {
         NombresUsuario = nombresUsuario;
     }
+
     public String getApellidosUsuario() {
         return ApellidosUsuario;
     }
+
     public void setApellidosUsuario(String apellidosUsuario) {
         ApellidosUsuario = apellidosUsuario;
     }
-    public int getNumeroDocumento() {
+
+    public long getNumeroDocumento() {
         return NumeroDocumento;
     }
-    public void setNumeroDocumento(int numeroDocumento) {
+
+    public void setNumeroDocumento(long numeroDocumento) {
         NumeroDocumento = numeroDocumento;
     }
-    public int getNumeCelular() {
+
+    public long getNumeCelular() {
         return NumeCelular;
     }
-    public void setNumeCelular(int numeCelular) {
+
+    public void setNumeCelular(long numeCelular) {
         NumeCelular = numeCelular;
     }
+
     public int getNumTelefono() {
         return NumTelefono;
     }
+
     public void setNumTelefono(int numTelefono) {
         NumTelefono = numTelefono;
     }
+
     public String getFechaNacimientoU() {
         return FechaNacimientoU;
     }
+
     public void setFechaNacimientoU(String fechaNacimientoU) {
         FechaNacimientoU = fechaNacimientoU;
     }
+
     public Date getCorreoUsuario() {
         return CorreoUsuario;
     }
+
     public void setCorreoUsuario(Date correoUsuario) {
         CorreoUsuario = correoUsuario;
     }
+
     public String getGeneroUsuario() {
         return GeneroUsuario;
     }
+
     public void setGeneroUsuario(String generoUsuario) {
         GeneroUsuario = generoUsuario;
     }
+
     public String getFotoUsuario() {
         return FotoUsuario;
     }
+
     public void setFotoUsuario(String fotoUsuario) {
         FotoUsuario = fotoUsuario;
     }
+
     public String getDireccionUsuario() {
         return DireccionUsuario;
     }
+
     public void setDireccionUsuario(String direccionUsuario) {
         DireccionUsuario = direccionUsuario;
     }
+
     public int getEdadU() {
         return EdadU;
     }
+
     public void setEdadU(int edadU) {
         EdadU = edadU;
     }
+
     public String getContraseña() {
         return Contraseña;
     }
+
     public void setContraseña(String contraseña) {
         Contraseña = contraseña;
     }
+
     public String getDisponibilidad() {
         return Disponibilidad;
     }
+
     public void setDisponibilidad(String disponibilidad) {
         Disponibilidad = disponibilidad;
     }
+
     public String getEstadoUsuario() {
         return EstadoUsuario;
     }
+
     public void setEstadoUsuario(String estadoUsuario) {
         EstadoUsuario = estadoUsuario;
     }
+
     public int getIdTipoFK() {
         return IdTipoFK;
     }
+
     public void setIdTipoFK(int idTipoFK) {
         IdTipoFK = idTipoFK;
     }
+
     public int getIdRolFK() {
         return IdRolFK;
     }
+
     public void setIdRolFK(int idRolFK) {
         IdRolFK = idRolFK;
     }
+
     public int getIdEstadoCivilFK() {
         return IdEstadoCivilFK;
     }
+
     public void setIdEstadoCivilFK(int idEstadoCivilFK) {
         IdEstadoCivilFK = idEstadoCivilFK;
     }
+
     public int getIdLugarFK() {
         return IdLugarFK;
     }
+
     public void setIdLugarFK(int idLugarFK) {
         IdLugarFK = idLugarFK;
     }
-
-    
-    
 }
